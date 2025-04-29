@@ -1,4 +1,4 @@
-package synchronizacjaDostepu;
+package lab13;
 
 import java.util.concurrent.Callable;
 

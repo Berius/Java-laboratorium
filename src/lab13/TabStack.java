@@ -1,4 +1,4 @@
-package synchronizacjaDostepu;
+package lab13;
 
 public class TabStack {
     private String[] stack = new String[100];

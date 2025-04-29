@@ -1,4 +1,4 @@
-package synchronizacjaDostepu;
+package lab13;
 
 public class ONP {
     private TabStack stack = new TabStack();
