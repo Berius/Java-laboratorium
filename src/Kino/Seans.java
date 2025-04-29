@@ -9,7 +9,7 @@ public class Seans implements Serializable {
     private String dzien;
     private String godzina;
     private int ograniczeniaWiekowe;
-    private HashMap<Character, HashMap<Integer, Boolean>> miejsca;
+    private HashMap<Character, HashMap<Integer, Boolean>> miejsca; //klucz: rzad, wartosc: mapa numerow miejsc
 
     public Seans(String tytul, String dzien, String godzina, int ograniczeniaWiekowe, int liczbaRzedow, int miejscaWRzedzie) {
         this.tytul = tytul;

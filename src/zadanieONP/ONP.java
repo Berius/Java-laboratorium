@@ -21,7 +21,7 @@ public class ONP {
 
             if (Character.isDigit(znak)) {
                 wynik += znak;
-                if (i + 1 == rownanie.length() || !Character.isDigit(rownanie.charAt(i + 1))) {
+                if (i + 1 == rownanie.length() || !Character.isDigit(rownanie.charAt(i + 1))) {// jeśli następny znak nie jest cyfrą lub to koniec równania
                     stack.push(wynik);
                     wynik = "";
                 }
@@ -91,7 +91,7 @@ public class ONP {
             } else {
                 switch (znak) {
                     case '+': case '-':
-                        while (stack.getSize() > 0 && !stack.showValue(stack.getSize() - 1).equals("(")) {
+                        while (stack.getSize() > 0 && !stack.showValue(stack.getSize() - 1).equals("(")) {// dopóki stos nie jest pusty i na jego szczycie nie ma nawiasu
                             wynik += stack.pop() + " ";
                         }
                         stack.push("" + znak);
