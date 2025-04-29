@@ -46,10 +46,10 @@ class Set<T extends Comparable<T>> {
 
     public static <T extends Comparable<T>> Set<T> dodajElementy(Set<T> s1, Set<T> s2) {
         Set<T> nowySet = new Set<>(s1.pojemnosc + s2.pojemnosc);
-        for (int i = 0; i < s1.rozmiar; i++){
+        for (int i = 0; i < s1.rozmiar; i++) {
             nowySet.dodajElement(s1.set[i]);
         }
-        for (int i = 0; i < s2.rozmiar; i++){
+        for (int i = 0; i < s2.rozmiar; i++) {
             nowySet.dodajElement(s2.set[i]);
         }
         return nowySet;
